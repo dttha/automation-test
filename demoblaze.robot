@@ -12,9 +12,10 @@ ${input_password}           id=loginpassword
 ${btn_login_in_form}        xpath=//button[text()='Log in']
 ${txt_wellcome_admin}       xpath=//a[text()='Welcome admin']
 ${timeout}                  10s
-${username_data}                 admin
-${password_data}                 admin
+${username_data}            admin
+${password_data}            admin
 ${web_browser}              chrome
+${executable_path}          /Users/trungnguyen/Documents/training-auto/web_automation/chromedriver
 
 *** Test Cases ***
 Login_Demoblaze
@@ -25,7 +26,7 @@ Login_Demoblaze
 *** Keywords ***
 Open Demoblaze
     [Arguments]     ${browser}
-    Open browser    ${URL}    ${browser}
+    Open browser    ${URL}    ${browser}     executable_path=${executable_path}
 
 Fill Login Form
     [Arguments]    ${username}      ${password}
