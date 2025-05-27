@@ -1,6 +1,7 @@
 pipeline {
     agent any
-
+    parameters { booleanParam(name: 'pullCode', defaultValue: false, description: 'Tích chọn để pull code mới nhất trên github') }
+    
     stages {
         stage('Pullcode'){
             when {
