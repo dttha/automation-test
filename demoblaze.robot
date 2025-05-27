@@ -3,9 +3,6 @@ Library             SeleniumLibrary
 
 Test Teardown       Close browser
 
-
-
-
 *** Variables ***
 ${URL}                      https://www.demoblaze.com/
 ${btn_login}                id=login2
