@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Build step chạy, pullCode = ${params.pullCode}"
+                echo "Thời gian hiện tại: ${new Date()}"
             }
         }
     }
